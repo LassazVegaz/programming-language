@@ -43,7 +43,8 @@ class Magenta {
 		if (length === 0) return { tokens: [] };
 
 		const tokens = [];
-		const validChars = "print";
+		const validChars =
+			"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_1234567890";
 		let pos = 0;
 
 		while (pos !== length) {
