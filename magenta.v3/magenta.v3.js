@@ -100,8 +100,12 @@ class Magenta {
 	}
 }
 
+const inputFile = process.argv[2];
+if (!inputFile) {
+	return console.log("Please provide a file to run");
+}
 const code = fs
-	.readFileSync(path.join(__dirname, "code.ma"), "utf-8")
+	.readFileSync(inputFile, "utf-8")
 	.toString()
 	.replace(/\r/, "");
 const intepreter = new Magenta(code);
