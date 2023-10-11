@@ -1,3 +1,4 @@
-var a = "Hello World"
+var a = "I Love"
 print a
-print "I love ☀️"
+var b = "☀️"
+print b
